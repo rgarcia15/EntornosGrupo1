@@ -1,3 +1,7 @@
+package proyectogit;
+
+import java.util.Scanner;
+
 public class test {
     public static void main (String args []){
         boolean bucle=true;
@@ -20,8 +24,9 @@ public class test {
                         System.out.println("No se puede introducir más discos, borra uno si quiere introducir otro");
                     }else{
                         try{
-                            System.out.println("Indica la posición del disco (Del 0 al "+(disc.length-1)+")");
+                            System.out.println("Indica la posición del disco (Del 1 al "+(disc.length)+")");
                             int d=new Scanner(System.in).nextInt();
+                            d--;
                             if (disc[d].getEstado().equals("OCUPADO")){
                                 System.out.println("El disco que has seleccionado ya está ocupado, por favor introduce otra posición");
                             }else{
@@ -46,7 +51,7 @@ public class test {
                         if (disc[i].getEstado().equals("OCUPADO"))
                         System.out.println(disc[i]);
                     }
-                    System.out.println("Dime la posición del disco (Del 0 al "+(disc.length-1)+")");
+                    System.out.println("Dime la posición del disco (Del 1 al "+(disc.length)+")");
                     Modificar m= new Modificar();
                     m.mod(disc);
                 }
@@ -57,8 +62,9 @@ public class test {
                         if (disc[i].getEstado().equals("OCUPADO"))
                         System.out.println(disc[i]);
                     }
-                    System.out.print("Elija un disco según su posición (Del 0 al "+(disc.length-1)+")");
+                    System.out.print("Elija un disco según su posición (Del 1 al "+(disc.length)+")");
                     int a=new Scanner(System.in).nextInt();
+                    a--;
                     if (disc[a].getEstado().equals("LIBRE")){
                         System.out.println("El disco que has seleccionado no existe, prueba con otro disco.");
                     }else{
@@ -78,6 +84,7 @@ public class test {
                     System.out.println("3. Lista de discos por duracion");
                     System.out.println("4. Salir del menú de listados");
                     int a=new Scanner(System.in).nextInt();
+                    a--;
                     switch (a) {
                         case 1 -> {
                             System.out.println("Introduce el autor del disco");
