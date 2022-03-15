@@ -1,4 +1,6 @@
-package src.proyectogit;
+
+package proyectogit;
+
 import java.util.Scanner;
 
 public class Modificar extends Disco{
@@ -6,8 +8,8 @@ public class Modificar extends Disco{
 
     }
     public void mod (Disco d[]){
-        System.out.println("Introduce el autor del disco");
         int e=new Scanner(System.in).nextInt();
+        e--;
         if (d[e].getEstado().equals("LIBRE")){
             System.out.println("El disco que has seleccionado no existe, prueba con otro disco.");
         }else{
