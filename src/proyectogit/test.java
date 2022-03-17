@@ -134,7 +134,9 @@ public class test {
                         }
                     }
                     case 5 -> bucle=false;
+                    case 6 -> System.out.println("Felisidad");
                     default -> System.out.println("Opción incorrecta");
+                    
                 }
             }catch(Exception e){
                 System.out.println();
