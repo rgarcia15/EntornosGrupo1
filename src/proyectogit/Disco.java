@@ -1,7 +1,7 @@
 package proyectogit;
 
 import java.util.Random;
-
+// clase disco
 public class Disco {
     private String estado="LIBRE";
     public String autor,titulo,genero;
