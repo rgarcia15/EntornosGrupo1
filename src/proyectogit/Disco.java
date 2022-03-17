@@ -38,6 +38,10 @@ public class Disco {
         return autor;
     }
     
+    public void setAutor(String autor){
+        this.autor=autor;
+    }
+    
     public String getGenero(){
         return genero;
     }
